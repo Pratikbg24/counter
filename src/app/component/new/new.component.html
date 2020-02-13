@@ -1,0 +1,17 @@
+<div class="container">
+<div class="login">
+    <div class="login-header">
+      <h1>Login</h1>
+    </div>
+    <div class="login-form">
+      <h3>Username:</h3>
+      <input type="text" placeholder="Username" [(ngModel)]="messageFromChild" /><br>
+      <h3>Password:</h3>
+      <input type="password" placeholder="Password"/>
+      <br>
+      <input type="button" value="Login" class="login-button"/>
+      <br>
+   <pm-on-chang [dataFromParent]="messageFromChild" (dataFromChild)="myData($event)"></pm-on-chang>
+  </div>
+ </div>
+ <button type="button" class="btn btn-danger">Danger</button>
